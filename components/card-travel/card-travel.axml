@@ -1,0 +1,26 @@
+<button data-id="{{data_id}}" size="default" type="primary" class="container-card" onTap="openModal">
+  <view class="container-image-card">
+    <image
+      mode="scaleToFill"
+      src="{{src}}"
+      class="image-product"
+      onLoad="changeSize"
+    />
+  </view>
+  <view class="container-info-card">
+    <text class="text-name">{{nameDestino}}</text>
+    <text>{{estado}}</text>
+  </view>
+  <view class="container-modify">
+    <button size="default" type="primary" catchTap="updateDestino">
+      <image mode="scaleToFill" src="/assest/setting-b.png" />
+    </button>
+    <button size="default" type="primary" catchTap="deleteDestino" >
+      <image mode="scaleToFill" src="/assest/delete-r.png" />
+    </button>
+  </view>
+</button>
+
+<!--<button size="default" type="primary" class="button-add"><image mode="scaleToFill" class="imageCar" src={{srcCar}} />
+      Add</button><button size="default" type="primary" class="button-whishlist"><image mode="scaleToFill" src={{srcHeart}} class="image-whishlist" /></button>
+-->

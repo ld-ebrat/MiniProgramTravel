@@ -1,0 +1,10 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/add-travel/add-travel",
+    "pages/actualizar-travel/actualizar-travel"
+  ],
+  "window": {
+    "defaultTitle": "My App"
+  }
+}

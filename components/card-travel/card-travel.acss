@@ -1,0 +1,68 @@
+.container-card {
+  background-color: white;
+  color: black;
+  max-width: 90%;
+  width: 80%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding-bottom: 10px;
+}
+
+.container-image-card {
+  display: flex;
+  width: 100%;
+  border: 1px solid gray;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.container-image-card image {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.container-info-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  padding: 0px 15px;
+  align-items: center;
+}
+
+.container-info-card :nth-child(2){
+  font-size: 18px;
+}
+
+.text-name {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.container-modify {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.container-modify button {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.container-modify image{
+  width: 36px;
+  height: 36px;
+}

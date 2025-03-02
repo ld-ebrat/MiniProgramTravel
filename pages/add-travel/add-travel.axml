@@ -1,0 +1,26 @@
+<view class="container-main">
+  <form onSubmit="formSubmit">
+    <view class="container">
+      <label>Destino</label>
+      <input placeholder="Destino" name="destino"/>
+    </view>
+    <view class="container">
+      <label>Descripcion</label>
+      <textarea placeholder="Descripcion" name="descripcion"></textarea>
+    </view>
+    <view class="piker">
+      <text>Seleccionar Estado</text>
+      <picker value="{{index}}" range="{{status}}" onChange="onChangePiker">
+        <view>
+          <text>Estado: </text>
+          <text>{{status[index]}}</text>
+        </view>
+      </picker>
+    </view>
+    <view class="container container-image">
+      <image mode="scaleToFill" src="{{src}}" />
+      <button size="default" type="primary" onTap="chooseImage">Agregar Imagen</button>
+    </view>
+    <button size="default" form-type="submit">Agregar Destino</button>
+  </form>
+</view>

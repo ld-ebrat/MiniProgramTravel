@@ -1,0 +1,32 @@
+<view style="width:100%; height:100vh; justify-content:center; position:relative; padding:20px 0px">
+  <button size="default" type="primary" class="botton-plus" onTap="handleAddTravel">
+    <image mode="scaleToFill" src="/assest/plus.png" />
+  </button>
+  <scroll-view style="width:100%; display:flex; flex-direction:column;align-items:center; gap:20px; z-index:2">
+    <view a:for="{{travels}}" a:for-index="index" a:for-item="travels" style="width:100%;display:flex;justify-content:center">
+      <card-travel
+        data_id="{{index}}"
+        description="{{travels.descripcion}}"
+        estado="{{travels.status}}"
+        nameDestino="{{travels.destino}}"
+        src="{{travels.imageUrl}}"
+        onHandleVisibilityModal="onHandleVisibilityModal"
+        onHandleDeleteDestino="onHandleDeleteDestino"
+        onHandleUpdateDestino="onHandleUpdateDestino"
+      >
+      </card-travel>
+    </view>
+  </scroll-view>
+  <modal-view-travel
+    src="{{srcModal}}"
+    description="{{descriptionModal}}"
+    nameDestino="{{nameDestinoModal}}"
+    visibilityModal="{{visibilityModal}}"
+    onHnadleCloseModal="onHnadleCloseModal"
+  >
+  </modal-view-travel>
+</view>
+
+
+<!--<modal-view-travel></modal-view-travel>
+-->
