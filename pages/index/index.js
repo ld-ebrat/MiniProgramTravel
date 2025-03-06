@@ -51,27 +51,9 @@ Page({
   onShow() {
     // Page display
     const travels = my.getStorageSync({key: "Travels"}).data
-    console.log(travels)
     this.setData({
       travels:travels
     })
-
-    console.log(this.data.travels)
-  },
-  onHide() {
-    // Page hidden
-  },
-  onUnload() {
-    // Page is closed
-  },
-  onTitleClick() {
-    // Title clicked
-  },
-  onPullDownRefresh() {
-    // Page is pulled down
-  },
-  onReachBottom() {
-    // Page is pulled to the bottom
   },
   onShareAppMessage() {
     // Back to custom sharing information

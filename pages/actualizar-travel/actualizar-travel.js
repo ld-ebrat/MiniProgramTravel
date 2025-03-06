@@ -35,7 +35,6 @@ Page({
   onLoad(query) {
     const travel = my.getStorageSync({key:"Travels"}).data[query.id]
 
-    console.log(travel)
     this.setData({
       id:query.id,
       nameDestino:travel.destino,

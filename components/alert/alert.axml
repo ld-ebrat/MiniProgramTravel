@@ -1,0 +1,22 @@
+<view class="container" a:if="{{ isConfirmActionMessage }}">
+  <view class="container-alert">
+    <view>
+      <text>Este es el mensaje que se mostrara</text>
+    </view>
+    <view class="container-button">
+      <button size="default" type="primary">Si</button>
+      <button size="default" type="primary">No</button>
+    </view>
+  </view>
+</view>
+
+<view class="container" a:elif="{{ isWarningMessage }}">
+  <view class="container-alert">
+    <view>
+      <text>Este es el mensaje de alerta</text>
+    </view>
+    <view class="container-button">
+      <button size="default" type="primary">OK</button>
+    </view>
+  </view>
+</view>

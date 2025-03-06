@@ -1,6 +1,7 @@
 {
   "usingComponents": {
     "card-travel":"/components/card-travel/card-travel",
-    "modal-view-travel":"/components/modal-view-travel/modal-view-travel"
+    "modal-view-travel":"/components/modal-view-travel/modal-view-travel",
+    "alert-component":"/components/alert/alert"
   }
 }

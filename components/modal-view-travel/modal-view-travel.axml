@@ -1,12 +1,14 @@
-<view class="container-main-modal-view-travel" a:if="{{visibilityModal}}">
-  <button class="container-image-close" onTap="handleOpenModal">
-    <image mode="scaleToFill" src="/assest/cerrar.png" class="image-close"/>
-  </button>
-  <view class="container-image-travel">
-    <image mode="scaleToFill" src="{{src}}" />
-  </view>
-  <view class="container-info-travel">
-    <text>{{nameDestino}}</text>
-    <text>{{description}}</text>
+<view class="container-background" a:if="{{visibilityModal}}">
+  <view class="container-main-modal-view-travel">
+    <button class="container-image-close" onTap="handleOpenModal">
+      <image mode="scaleToFill" src="/assest/cerrar.png" class="image-close" />
+    </button>
+    <view class="container-image-travel">
+      <image mode="scaleToFill" src="{{src}}" />
+    </view>
+    <view class="container-info-travel">
+      <text>{{nameDestino}}</text>
+      <text>{{description}}</text>
+    </view>
   </view>
 </view>
